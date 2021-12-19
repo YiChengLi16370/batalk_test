@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="topNav">
+            <input type="text" placeholder="tag">
+            <a href="">search</a>
+        </div>
+
+        <h1>Trending</h1>
+        <div class="trending">
+            <a v-for="item in tagsArr.arr" :key="item.name" class="tags" href="">{{item.name}}javascript</a>
+        </div>
+
+        <p>Questions</p>
+        <div class="question">
+            <div class="box">score
+                <div class="score">1</div>
+            </div>
+            <div class="box">answer
+                <div class="answer">1</div>
+            </div>
+            <div class="box">viewed
+                <div class="viewed">1</div>
+            </div>
+            <div class="box">
+                <img src="" class="user" alt="">
+                name
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="style/js/vue.js"></script>
+    <script src="style/js/style.js"></script>
+
+</body>
+
+</html>
